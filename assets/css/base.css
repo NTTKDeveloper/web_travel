@@ -1,20 +1,29 @@
-*
-{
+*{
     margin: 0;
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
 }
 
-ul {
+ul{
     margin: 0px;
+    list-style: none;
 }
 
-/* Header */
 a {
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: none;
+}
+.btn{
+    height: 50px;
+    width: 250px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 400ms ease;
+    border: 1px solid #a107e900;
+    background:linear-gradient(to right,  #36bc61, #244bc1);
 }
