@@ -387,6 +387,10 @@ header{
     font-size: 100px;
     font-weight: 800;
 }
+
+.intro__image {
+    max-width: 100%;
+}
 /* End page about */
 
 
