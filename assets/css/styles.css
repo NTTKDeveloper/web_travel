@@ -55,26 +55,15 @@ header{
 
 /* Home */
 .home {
-    position: relative;
-}
-.home .home__background {
     width: 100%;
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     background-image: linear-gradient(rgba(7, 58, 109, 0.265), rgba(6, 66, 134, 0.288)), url(/assets/images/bg_header.webp);
-
 }
 
-.home .about_background {
-    width: 100%;
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-image: linear-gradient(rgba(255, 170, 0, 0.265), rgba(6, 66, 134, 0.288)), url(/assets/images/ba_header.jpg);
-}
+
 
 .home .home__content {
     margin: auto;
@@ -238,6 +227,7 @@ header{
 .section__one {
     background-color: #f8fcf9;
     display: flex;
+    padding-bottom: 80px;
 }
 
 .section__one--list{    
@@ -247,18 +237,22 @@ header{
     box-shadow: 0px 0px 12px 0px rgba(34, 34, 34, 0.07);
     background: #fff;
     padding-top: 10px;
+    padding-bottom: 10px;
 }
+
+
 .section__one .list__img img{
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.1);
+    
 }
 
 
 .section__one .list__content{
+    width: 14rem;
     position: absolute;
     top: calc(50% - 60px);
-    left: calc(50% - 70px);
+    left: calc(50% - 7rem);
 }
 .section__one .list__item span{
     font-weight: 700;
@@ -267,9 +261,8 @@ header{
     text-transform: uppercase;
     color: #fff;
 }
-.section__one .list__item--price{
+.section__one .list__item--prices{
     color: #fff;
-    margin-top: 20px;
 }
 .section__one .list__item_rating{
     padding-top: 10px;
@@ -278,6 +271,8 @@ header{
     color: rgb(255, 196, 0);
 }
 .section__one .list__item--btn{
+    position: absolute;
+    left: calc(50% - 80px);
     text-decoration: none;
     border-radius: 30px;
     width: 160px;
@@ -289,7 +284,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 50px;
 }
 .section__one .list__item--btn a{
     color: #fff;
@@ -298,6 +293,7 @@ header{
     color: #fff;
     background-color: #5cb875cc;
     width: 150px;
+    left: calc(50% - 75px);
     height: 30px;
     font-size: 13px;
     border-radius: 30px;
@@ -307,6 +303,56 @@ header{
     align-items: center;
     justify-content: center;
 }
+.section__one .list__item_rating i:last-child{
+    color: white ;
+    border: 1 px solid #000;    
+}
+/* section two */
+
+.section__two {  
+    width: 100%;
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: linear-gradient(rgba(68, 150, 91, 0.299), rgba(41, 100, 168, 0.527)), url(../images/section2.webp);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.section__two .content--btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.section__two .content--btn .btn__book{
+    height: 50px;
+    width: 250px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 400ms ease;
+    background:linear-gradient(to right, #1bfa5e, #4f78ff,  #4fff87, #1b53fa);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+ }
+
+.section__two .section__two--content{
+    background-color: #fff;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+/* end section two */
 /* End page home */
 
 
@@ -318,6 +364,29 @@ header{
 
 
 /* Page about */
+.about {
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: linear-gradient(rgba(185, 137, 42, 0.265), rgba(18, 83, 158, 0.47)), url(/assets/images/ba_header.jpg);
+}
+
+.about .about__content {
+    margin: auto;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+
+.about__content--name {
+    color: #fff;
+    font-size: 100px;
+    font-weight: 800;
+}
 /* End page about */
 
 
