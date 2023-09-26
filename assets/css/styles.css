@@ -108,76 +108,6 @@ header {
   color: #fff;
 }
 
-/* Search */
-.search {
-  margin-top: -100px;
-}
-.col-lg-2 {
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-.search__head {
-  top: -100px;
-  height: 100px;
-  width: 100%;
-  background-color: #fff;
-  display: flex;
-  flex-wrap: wrap;
-  z-index: 1;
-}
-.search__head:first-child {
-  border-top-left-radius: 94px;
-}
-.search__head:last-child {
-  border-top-right-radius: 94px;
-}
-.search__head--choose--first:hover {
-  border-top-left-radius: 94px;
-}
-.search__head--choose--last:hover {
-  border-top-right-radius: 94px;
-}
-.search__head--choose {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  margin: 0;
-  height: 100px;
-  width: 100%;
-  padding: 0 15px;
-  font-size: 18px;
-  font-weight: 600;
-}
-.search__head--choose img {
-  padding-right: 10px;
-}
-.search__head--choose a {
-  color: #000;
-}
-.search__head--choose:hover {
-  cursor: pointer;
-  background: linear-gradient(to right, #36bc61, #244bc1);
-  color: #fff;
-}
-/* Search box */
-.searchsub {
-  position: relative;
-  width: 100%;
-  height: 200px;
-  background: linear-gradient(to right, #64dc54, #438be4);
-}
-.searchsub .search__box {
-  /* position: absolute; */
-  margin: auto;
-  display: flex;
-}
-.search__box span {
-  font-size: 13px;
-  font-weight: 600;
-  color: #fff;
-}
 
 /* Section one */
 .box__head {
@@ -460,43 +390,6 @@ footer {
   align-items: center;
   justify-content: center;
   margin: 0;
-}
-
-.section__three--about--item {
-  width: 100%;
-  margin-top: 20px;
-  position: relative;
-}
-.section__three--about--item .list--item img {
-  width: 100%;
-  height: 50vh;
-  border-radius: 20px;
-}
-
-.section__three--about--content {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  top: calc(50% - 80px);
-  padding-left: 50px;
-}
-.section__three--about .content--title {
-  font-size: 42px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-.section__three--about .content--title,
-.content--prices {
-  color: #fff;
-}
-.section__three--about .content--prices {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 20px;
-}
-.section__three--about .content--btn {
 }
 
 /* Section contact */
