@@ -201,6 +201,25 @@
 }
 /* end section two */
 
+<<<<<<< HEAD
+=======
+/* Footer */
+footer {
+  padding: 100px 0 20px;
+  width: 100%;
+  /* height: 60vh; */
+  background-color: #f8fcf9;
+}
+
+/* .section__footer{
+    display: flex;
+
+} */
+.section__footer {
+}
+
+/* End Footer */
+>>>>>>> 7b3a0915cf11ab2b713411840ff2ec1faf0d6a46
 /* End page home */
 
 /* Page about */
