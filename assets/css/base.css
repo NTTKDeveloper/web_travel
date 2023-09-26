@@ -1,3 +1,21 @@
+:root {
+    --white : #fff;
+    --background-color: #f8fcf9;
+    --green: #5cb874;
+    --green2: #38a62e;
+    --green3: #0b3d06;
+    --blue: #244bc1;
+    --yellow: #ffc107;
+    --light-yellow: #ffeb8d;
+    --black: #000000;
+    --gray: #9a9a9a;
+    --logo-color: #f4f4f8;
+    --light-gray: #ddd;
+}
+
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -25,11 +43,122 @@ a:hover {
     font-weight: 600;
     transition: all 400ms ease;
     border: 1px solid #a107e900;
-    background:linear-gradient(to right,  #36bc61, #244bc1);
+    background:linear-gradient(to right,  var(--green2) ,var(--blue));
 }
 .btn a{
-    color: #fff;
+    color:var(--white);
 }
+
+/* Header */
+
+header {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(13, 65, 143, 0.452);
+    position: fixed;
+    z-index: 999;
+  }
+  
+  .head {
+    display: flex;
+    justify-content: space-between;
+  }
+  .head .head__menu--list {
+    display: flex;
+    text-align: right;
+    font-weight: 600;
+  }
+  .head .head__menu--list .head__menu--item a {
+    color: var(--white);
+  }
+  .head .head__menu ul li {
+    list-style: none;
+    padding: 10px;
+    margin: 10px;
+  }
+  .head .head__logo {
+    font-size: 40px;
+  }
+  .head .head__logo--img {
+    color: var(--blue);
+  }
+  .head .head__logo span {
+    font-size: 30px;
+    color: var(--logo-color);
+    font-weight: 800;
+    margin-bottom: 0;
+    height: 40px;
+    width: 100%;
+  }
+  
+  .head .head__search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+  }
+  .head .head__search i {
+    font-size: 18px;
+    cursor: pointer;
+  }
+  /*Box */
+  .box__head {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  .box__head .inner__title {
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    padding-top: 90px;
+  }
+  .box__head .inner__title::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: var(--light-gray);
+    bottom: 1px;
+    left: calc(50% - 60px);
+  }
+  .box__head .inner__title::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background:var(--green);
+    bottom: 0;
+    left: calc(50% - 20px);
+  }
+  .box__head .inner__desc {
+    font-size: 15px;
+    color: var(--gray);
+  }
+
+
+  /* Background img */
+  .background--img{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  /* Footer */
+  footer {
+    padding: 100px 0;
+    width: 100%;
+    height: 60vh;
+    background-color: var(--background-color);
+  }
+
 .section__footer .footer--info--heading img{
     padding: 0 10px;
 }
@@ -37,13 +166,13 @@ a:hover {
     display: flex;
     flex: start;
     align-items: center;
-    color: #0b3d06;
+    color:var(--green3);
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 30px;
 }
 .footer--info--desc p{
-    color: #9a9a9a;
+    color: var(--gray);
     font-size: 18px;
 
 }
@@ -59,8 +188,8 @@ a:hover {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background-color: #24801b;
-    color:#fff;
+    background-color: var(--green3);
+    color: var(--white);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,7 +198,7 @@ a:hover {
     position: relative;
 }
 .section__footer  .footer--info--socials ul li i:hover{
-    background-color: #244bc1;
+    background-color: var(--blue);
     transition: 0.4s;
 }
 .section__footer .footer--blogs--info{
@@ -83,21 +212,21 @@ a:hover {
     padding:  0 0 10px 10px;
 }
 .section__footer  .footer--infor--desc a{
-    color: #000;
+    color: var(--black);
 }
 .section__footer  .footer--infor--desc a:hover{
-    color: #fff;
+    color:var(--white);
 }
 
 .section__footer .footer--info {
      font-size: 18px;
      font-weight: 600;
-     color: #9a9a9a;
+     color: var(--gray);
      padding: 10px 0;
 }
 .section__footer .footer--info i{
     padding-right: 10px ;
-    color: #24801b;
+    color: var(--green3);
 }
 .section__footer .section__footer--creator{
     display: flex;
@@ -108,10 +237,10 @@ a:hover {
     color: #2d2d2d;
 }
  .section__footer--creator a{
-    color: #0b3d06;
+    color: var(--green3);
 }
  .section__footer--creator a:hover{
-    color: #244bc1;
+    color:var(--blue);
 }
 .section__footer--content .section__footer--img{
     width: 100%;
