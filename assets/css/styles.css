@@ -456,6 +456,12 @@ body.register {
   padding: 30px 0 0;
 }
 
+.register__form {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
 .register__form-group {
   display: flex;
   justify-content: center;
