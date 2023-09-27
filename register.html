@@ -30,17 +30,31 @@
             <div class="head">
               <div class="head__logo">
                 <a href="#">
-                  <img src="./assets/images/logo.webp" alt="LOGO" class="head__logo--img">
+                  <img
+                    src="./assets/images/logo.webp"
+                    alt="LOGO"
+                    class="head__logo--img"
+                  />
                   <span>TRAVELATW</span>
                 </a>
               </div>
               <div class="head__menu">
                 <ul class="head__menu--list">
-                  <li class="head__menu--item"><a href="/home.html">HOME</a></li>
-                  <li class="head__menu--item"><a href="/about.html">ABOUT</a></li>
-                  <li class="head__menu--item"><a href="/contact.html">CONTACT</a></li>
-                  <li class="head__menu--item"><a href="/login.html">LOGIN</a></li>
-                  <li class="head__menu--item"><a href="/register.html">REGISTER</a></li>
+                  <li class="head__menu--item">
+                    <a href="/home.html">HOME</a>
+                  </li>
+                  <li class="head__menu--item">
+                    <a href="/about.html">ABOUT</a>
+                  </li>
+                  <li class="head__menu--item">
+                    <a href="/contact.html">CONTACT</a>
+                  </li>
+                  <li class="head__menu--item">
+                    <a href="/login.html">LOGIN</a>
+                  </li>
+                  <li class="head__menu--item">
+                    <a href="/register.html">REGISTER</a>
+                  </li>
                 </ul>
               </div>
               <div class="head__search">
@@ -58,14 +72,14 @@
 
         <div class="register__box">
           <div class="register__box-img">
-            <h2 class="register__box-img-heading">Travelatw</h2>
+            <!-- <h2 class="register__box-img-heading">Travelatw</h2> -->
             <p class="register__box-img-para">
               Our destination is not a land, but a new way of looking.
             </p>
           </div>
 
           <div class="register__box-form">
-            <form method="POST" action="" id="signup" class="register__form">
+            <form method="POST" action="#" id="signup" class="register__form">
               <div class="register__form-group">
                 <div class="register__form-input-icon">
                   <i class="fa-solid fa-user"></i>
@@ -83,9 +97,21 @@
                   <i class="fa-solid fa-envelope"></i>
                 </div>
                 <input
-                  type="text"
+                  type="email"
                   class="register__form-input"
                   placeholder="Enter your email"
+                  required
+                />
+              </div>
+
+              <div class="register__form-group">
+                <div class="register__form-input-icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <input
+                  type="text"
+                  class="register__form-input"
+                  placeholder="Enter your address"
                   required
                 />
               </div>
@@ -99,7 +125,11 @@
                   class="register__form-input"
                   placeholder="Enter your password"
                   required
+                  minlength="8"
                 />
+                <div class="register__form-input--show-password">
+                  <i class="fa-solid fa-eye-slash"></i>
+                </div>
               </div>
 
               <div class="register__form-group">
@@ -111,14 +141,20 @@
                   class="register__form-input"
                   placeholder="Confirm your password"
                   required
+                  minlength="8"
                 />
+                <div class="register__form-input--show-password">
+                  <i class="fa-solid fa-eye-slash"></i>
+                </div>
               </div>
 
-              <input
-                class="register__form-submit-btn"
-                type="submit"
-                value="Register"
-              />
+              <div class="register__form-submit">
+                <input
+                  class="btn register__form-submit-btn"
+                  type="submit"
+                  value="Register"
+                />
+              </div>
             </form>
 
             <div class="register__box-form--separation">
@@ -130,22 +166,30 @@
             </div>
 
             <ul class="register__box-social">
-              <li class="register__box-social-link">
+              <li
+                class="register__box-social-link register__box-social-link--fb"
+              >
                 <a href="">
-                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-facebook-f"></i>
                 </a>
               </li>
-              <li class="register__box-social-link">
+              <li
+                class="register__box-social-link register__box-social-link--insta"
+              >
                 <a href="">
                   <i class="fa-brands fa-instagram"></i>
                 </a>
               </li>
-              <li class="register__box-social-link">
+              <li
+                class="register__box-social-link register__box-social-link--twitter"
+              >
                 <a href="">
                   <i class="fa-brands fa-twitter"></i>
                 </a>
               </li>
-              <li class="register__box-social-link">
+              <li
+                class="register__box-social-link register__box-social-link--gg"
+              >
                 <a href="">
                   <i class="fa-brands fa-google"></i>
                 </a>
