@@ -431,14 +431,14 @@ body.register {
   justify-content: center;
 }
 
-.register__box-img-heading {
+/* .register__box-img-heading {
   color: var(--white);
   text-transform: uppercase;
   font-size: 3rem;
   font-family: "Monoton", cursive;
   text-align: center;
   margin-bottom: 24px;
-}
+} */
 
 .register__box-img-para {
   color: var(--white);
@@ -476,12 +476,9 @@ body.register {
   padding: 0 10px;
 }
 
+.register__form-input:hover,
 .register__form-input:focus {
-  color: var(--green2);
   border-color: var(--green2);
-}
-
-.register__form-input::placeholder:focus {
   color: var(--green2);
 }
 
@@ -523,11 +520,12 @@ body.register {
 .register__box-form--separation-right {
   height: 1px;
   width: 100%;
-  background-color: var(--white);
+  background-color: rgba(255, 255, 255, 0.8);
   flex: 1;
 }
 
 .register__box-form--separation-content {
+  color: rgba(255, 255, 255, 0.8);
   padding: 0px 15px 0px;
 }
 
@@ -611,6 +609,11 @@ body.register {
 }
 .register__box-login-link {
   color: rgb(19, 119, 214);
+}
+
+.register__box-login-link:hover {
+  font-weight: 600;
+  color: rgb(19, 12, 214);
 }
 
 /* End Page register */
