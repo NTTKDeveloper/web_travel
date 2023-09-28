@@ -598,7 +598,8 @@ body.register {
   margin: 0;
 }
 
-.register__box-social {
+.register__box-social,
+.login__box-social {
   list-style: none;
   display: flex;
   justify-content: center;
@@ -606,7 +607,8 @@ body.register {
   padding: 35px 0;
 }
 
-.register__box-social-link {
+.register__box-social-link,
+.login__box-social-link {
   font-size: 1.2rem;
   border: 1px solid var(--white);
   width: 40px;
@@ -615,20 +617,24 @@ body.register {
   margin: 0 3px 0;
 }
 
-.register__box-social-link:hover {
+.register__box-social-link:hover,
+.login__box-social-link:hover {
   border: transparent;
   border-radius: 10px;
 }
 
-.register__box-social-link--fb:hover {
+.register__box-social-link--fb:hover,
+.login__box-social-link--fb:hover {
   background-color: rgb(8, 102, 255);
 }
 
-.register__box-social-link--insta {
+.register__box-social-link--insta,
+.login__box-social-link--insta {
   font-size: 1.5rem;
 }
 
-.register__box-social-link--insta:hover {
+.register__box-social-link--insta:hover,
+.login__box-social-link--insta:hover {
   background: radial-gradient(
     circle at 30% 107%,
     #fdf497 0%,
@@ -639,11 +645,13 @@ body.register {
   );
 }
 
-.register__box-social-link--twitter:hover {
+.register__box-social-link--twitter:hover,
+.login__box-social-link--twitter:hover {
   background-color: rgb(28, 156, 234);
 }
 
-.register__box-social-link--gg:hover {
+.register__box-social-link--gg:hover,
+.login__box-social-link--gg:hover {
   background-color: rgb(243, 0, 28);
   /* background: linear-gradient(
     rgb(243, 0, 28),
@@ -653,29 +661,35 @@ body.register {
   ); */
 }
 
-.register__box-social-link a {
+.register__box-social-link a,
+.login__box-social-link a {
   color: var(--white);
   text-align: center;
   line-height: 38px;
 }
 
-.register__box-login {
+.register__box-login,
+.login__box-register {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 15px;
 }
 
-.register__box-login-message {
+.register__box-login-message,
+.login__box-register-message {
   padding: 0;
   margin: 0;
   color: rgba(255, 255, 255, 0.8);
 }
-.register__box-login-link {
+
+.register__box-login-link,
+.login__box-register-link {
   color: rgb(19, 119, 214);
 }
 
-.register__box-login-link:hover {
+.register__box-login-link:hover,
+.login__box-register-link:hover {
   font-weight: 600;
   color: rgb(19, 12, 214);
 }
@@ -771,6 +785,12 @@ body#login {
   flex: 1;
 }
 
+.login__form-input:focus,
+.login__form-input:hover {
+  color: var(--light-yellow);
+  border-color: var(--light-yellow);
+}
+
 .login__form-input::placeholder {
   color: rgba(255, 255, 255, 0.7);
   font-size: 1rem;
@@ -791,9 +811,10 @@ body#login {
   font-weight: 600;
 }
 
-/* .login__box-form-remember--btn input[type="checkbox"] {
-  
-} */
+.login__box-form-remember--btn {
+  cursor: pointer;
+  margin-right: 5px;
+}
 
 .login__box-form-forgot-password {
   flex: 1;
@@ -807,12 +828,13 @@ body#login {
 }
 
 .login__box-form-forgot-password:hover a {
-  color: #f80a06;
+  color: var(--light-yellow);
 }
 
 .login__box-form-submit {
   display: flex;
   justify-content: center;
+  margin-bottom: 30px;
 }
 
 .login__box-form-submit-btn {
@@ -820,4 +842,37 @@ body#login {
   text-transform: uppercase;
   font-size: 1.2rem;
   font-weight: 700;
+}
+
+.login__box-form--separation {
+  margin: 0;
+}
+
+.login__box-form--separation-left,
+.login__box-form--separation-right {
+  height: 2px;
+
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.login__box-form--separation-content {
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 600;
+}
+
+.login__box-social-link {
+  border: 0;
+  box-shadow: 0 0 3px 3px rgba(255, 255, 255, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.login__box-register-message {
+  color: rgba(0, 0, 0, 0.88);
+  font-weight: 500;
+}
+
+.login__box-register-link {
+  color: var(--light-yellow);
+  font-weight: 500;
+  text-transform: uppercase;
 }
