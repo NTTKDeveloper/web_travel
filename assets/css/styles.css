@@ -290,7 +290,7 @@
 /* Page about */
 .about {
   height: 100vh;
-  background-image: url(/assets/images/bg_header.webp);
+  background-image: url(/assets/images/bg_header.jpg);
 }
 
 .about .about__content {
