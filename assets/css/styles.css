@@ -119,9 +119,6 @@
 .section__one .list__item_rating {
   padding-top: 10px;
 }
-.section__one .list__item_rating i {
-  color: var(--yellow);
-}
 .section__one .btn--more {
   width: 200px;
   position: absolute;
@@ -157,10 +154,32 @@
   }
 }
 
+/* Section description */
+.description {
+  padding-top: 50px;
+  background-color: var(--background-color);
+}
+.description i{
+  font-size: 32px;
+  color: var(--green3);
+  margin-bottom: 10px;
+}
+.description .description__title{
+  font-size: 24x;
+  color: var(--green3);
+  margin-bottom: 10px;
+}
+
+
+.description .description__desc{
+  font-size: 16px;
+  color: var(--gray);
+  margin-bottom: 20px;
+}
 /* section two */
 .section__two{
   height: 60vh;
-  background-image: linear-gradient( var(--background-green), var(--background-blue)), url(../images/section2.webp);
+  background-image: linear-gradient( var(--background-green), var(--background-blue)), url(../images/hagiang.webp);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -235,7 +254,37 @@
   }
 }
 /* end section two */
+/* Section three */
+.section__three {
+  padding-bottom: 50px;
+  background-color: var(--background-color);
+}
+.section__three--block{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
 
+.section__three-img img{
+  height: 100%;
+  width: 100%;
+  padding-right: 10px;
+}
+
+.section__three-content{
+  width: 100%;
+}
+.section__three-content--two {
+  height: 100%;
+  width: 100%;
+  background-color: var(--green);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
 /* End page home */
 
 /* Page about */

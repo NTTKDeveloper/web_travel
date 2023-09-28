@@ -57,7 +57,15 @@ a:hover {
 .btn a{
     color:var(--white);
 }
+.rating i{
+  color: var(--yellow);
+}
 
+hr{
+  padding: 0;
+  margin: 0; 
+  border: 1px solid var(--green3);
+}
 /* Header */
 
 header {
