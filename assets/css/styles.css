@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /* Home */
-.home {  
+.home {
   height: 100vh;
   /* background-image: linear-gradient(var(--background-blue),var(--background-blue)), url(/assets/images/bg_header.webp); */
 }
@@ -15,13 +15,11 @@
   justify-content: center;
 }
 
-
 .home__video video {
-  position: absolute ;
+  position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
-
 }
 .video__overlay {
   position: absolute;
@@ -31,7 +29,6 @@
   background-color: rgba(0, 0, 0, 0.3);
   width: 100%;
   height: 99.99999%;
-
 }
 .home .home__content {
   margin: auto;
@@ -43,7 +40,7 @@
 }
 
 .home__content--name {
-  color:var(--white);
+  color: var(--white);
   font-size: 100px;
   font-weight: 800;
 }
@@ -56,7 +53,7 @@
   margin-bottom: 20px;
   font-family: var(--font2);
 }
-.home__content--desc p{
+.home__content--desc p {
   font-size: 18px;
   color: var(--light-white);
   display: flex;
@@ -75,9 +72,7 @@
   color: var(--white);
 }
 
-
 /* Section one */
-
 
 .section__one {
   background-color: var(--background-color);
@@ -131,7 +126,7 @@
 }
 
 .section__one .list__item--date {
-  color:var(--white);
+  color: var(--white);
   background-color: var(--green);
   width: 150px;
   left: calc(50% - 75px);
@@ -159,27 +154,30 @@
   padding-top: 50px;
   background-color: var(--background-color);
 }
-.description i{
+.description i {
   font-size: 32px;
   color: var(--green3);
   margin-bottom: 10px;
 }
-.description .description__title{
+.description .description__title {
   font-size: 24x;
   color: var(--green3);
   margin-bottom: 10px;
 }
 
-
-.description .description__desc{
+.description .description__desc {
   font-size: 16px;
   color: var(--gray);
   margin-bottom: 20px;
 }
 /* section two */
-.section__two{
+.section__two {
   height: 60vh;
-  background-image: linear-gradient( var(--background-green), var(--background-blue)), url(../images/hagiang.webp);
+  background-image: linear-gradient(
+      var(--background-green),
+      var(--background-blue)
+    ),
+    url(../images/hagiang.webp);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -259,20 +257,20 @@
   padding-bottom: 50px;
   background-color: var(--background-color);
 }
-.section__three--block{
+.section__three--block {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
 }
 
-.section__three-img img{
+.section__three-img img {
   height: 100%;
   width: 100%;
   padding-right: 10px;
 }
 
-.section__three-content{
+.section__three-content {
   width: 100%;
 }
 .section__three-content--two {
@@ -340,7 +338,6 @@
   justify-content: center;
   margin: 0;
 }
-
 
 /* End page about */
 
@@ -440,23 +437,13 @@
 }
 /* End Page contact */
 
-
-
-
 /* Page login */
 /* end Page login */
 
-
-
-
-
 /*  Register */
 body.register {
-  background-image: linear-gradient(
-      var(--dark-gray-red),
-      rgba(31, 31, 31, 0.3)
-  ),
-  url(/assets/images/register-bg.png);
+  background-image: linear-gradient(var(--dark-gray-red), rgba(31, 31, 31, 0.3)),
+    url(/assets/images/register-bg.png);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -492,19 +479,19 @@ body.register {
   justify-content: center;
 }
 
-.register__box-img-heading {
-  color:var(--white);
+/* .register__box-img-heading {
+  color: var(--white);
   text-transform: uppercase;
   font-size: 3rem;
   font-family: "Monoton", cursive;
   text-align: center;
   margin-bottom: 24px;
-}
+} */
 
 .register__box-img-para {
   color: var(--white);
   text-transform: capitalize;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 600;
   text-align: center;
 }
@@ -516,6 +503,12 @@ body.register {
   padding: 30px 0 0;
 }
 
+.register__form {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
 .register__form-group {
   display: flex;
   justify-content: center;
@@ -523,9 +516,7 @@ body.register {
 
 .register__form-input {
   background-color: transparent;
-  border-top: none;
-  border-right: none;
-  border-left: none;
+  border: 0;
   border-bottom: 3px solid var(--white);
   color: var(--white);
   outline: none;
@@ -536,8 +527,18 @@ body.register {
   padding: 0 10px;
 }
 
+.register__form-input:focus,
+.register__form-input:hover {
+  color: var(--green2);
+  border-color: var(--green2);
+}
+
+/* .register__form-input::placeholder:focus {
+  color: var(--green2);
+} */
+
 .register__form-input::placeholder {
-  color: var(--white);
+  color: rgba(255, 255, 255, 0.8);
   font-weight: 100;
   font-style: italic;
 }
@@ -548,23 +549,27 @@ body.register {
   margin: 0;
 }
 
+.register__form-submit {
+  text-align: center;
+  margin: 30px 0;
+}
+
 .register__form-submit-btn {
   color: var(--white);
-  background-color: rgb(19, 119, 214);
-  outline: none;
-  cursor: pointer;
-  width: 50%;
-  height: 40px;
+  width: 40%;
+  height: 42px;
   text-align: center;
-  border: none;
-  border-radius: 8px;
-  margin: 30px 25%;
   font-size: 1.2rem;
   font-weight: 600;
   left: 23%;
 }
 
-.register__box-form--separation {
+/* End Page register */
+
+/* General section of register and login page: separation, social, login/register */
+
+.register__box-form--separation,
+.login__box-form--separation {
   display: flex;
   align-items: center;
   height: 20px;
@@ -572,18 +577,23 @@ body.register {
 }
 
 .register__box-form--separation-left,
-.register__box-form--separation-right {
+.register__box-form--separation-right,
+.login__box-form--separation-left,
+.login__box-form--separation-right {
   height: 1px;
   width: 100%;
-  background-color:var(--white);
+  background-color: rgba(255, 255, 255, 0.8);
   flex: 1;
 }
 
-.register__box-form--separation-content {
+.register__box-form--separation-content,
+.login__box-form--separation-content {
   padding: 0px 15px 0px;
+  color: rgba(255, 255, 255, 0.8);
 }
 
-.register__box-form--separation-content p {
+.register__box-form--separation-content p,
+.login__box-form--separation-content p {
   padding: 0;
   margin: 0;
 }
@@ -605,6 +615,44 @@ body.register {
   margin: 0 3px 0;
 }
 
+.register__box-social-link:hover {
+  border: transparent;
+  border-radius: 10px;
+}
+
+.register__box-social-link--fb:hover {
+  background-color: rgb(8, 102, 255);
+}
+
+.register__box-social-link--insta {
+  font-size: 1.5rem;
+}
+
+.register__box-social-link--insta:hover {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+}
+
+.register__box-social-link--twitter:hover {
+  background-color: rgb(28, 156, 234);
+}
+
+.register__box-social-link--gg:hover {
+  background-color: rgb(243, 0, 28);
+  /* background: linear-gradient(
+    rgb(243, 0, 28),
+    rgb(255, 197, 0),
+    rgb(0, 196, 73),
+    rgb(56, 118, 248)
+  ); */
+}
+
 .register__box-social-link a {
   color: var(--white);
   text-align: center;
@@ -621,12 +669,18 @@ body.register {
 .register__box-login-message {
   padding: 0;
   margin: 0;
+  color: rgba(255, 255, 255, 0.8);
 }
 .register__box-login-link {
   color: rgb(19, 119, 214);
 }
 
-/* End Page register */
+.register__box-login-link:hover {
+  font-weight: 600;
+  color: rgb(19, 12, 214);
+}
+
+/* General section of register and login page */
 
 /* Page login */
 
@@ -686,7 +740,7 @@ body#login {
   font-size: 1.8rem;
   font-weight: 800;
   text-transform: uppercase;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 
 .login__box-form {
@@ -695,7 +749,7 @@ body#login {
 .login__box-form-group {
   display: flex;
   justify-content: center;
-  margin-bottom: 25px;
+  margin-top: 25px;
 }
 
 .login__box-form-group i {
@@ -726,7 +780,8 @@ body#login {
 
 .login__box-form-option-forgot {
   display: flex;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
+  margin-top: 5px;
 }
 
 .login__box-form-remember {
@@ -756,11 +811,13 @@ body#login {
 }
 
 .login__box-form-submit {
+  display: flex;
+  justify-content: center;
+}
+
+.login__box-form-submit-btn {
   color: var(--white);
-  width: 40%;
-  height: 42px;
-  text-align: center;
+  text-transform: uppercase;
   font-size: 1.2rem;
-  font-weight: 600;
-  left: 50%;
+  font-weight: 700;
 }
