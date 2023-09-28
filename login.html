@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <link rel="stylesheet" href="./assets/css/base.css" />
   </head>
-  <body>
+  <body id="login">
     <!-- Header -->
     <header>
       <div class="container">
@@ -30,17 +30,31 @@
             <div class="head">
               <div class="head__logo">
                 <a href="#">
-                  <img src="./assets/images/logo.webp" alt="LOGO" class="head__logo--img">
+                  <img
+                    src="./assets/images/logo.webp"
+                    alt="LOGO"
+                    class="head__logo--img"
+                  />
                   <span>TRAVELATW</span>
                 </a>
               </div>
               <div class="head__menu">
                 <ul class="head__menu--list">
-                  <li class="head__menu--item"><a href="/home.html">HOME</a></li>
-                  <li class="head__menu--item"><a href="/about.html">ABOUT</a></li>
-                  <li class="head__menu--item"><a href="/contact.html">CONTACT</a></li>
-                  <li class="head__menu--item"><a href="/login.html">LOGIN</a></li>
-                  <li class="head__menu--item"><a href="/register.html">REGISTER</a></li>
+                  <li class="head__menu--item">
+                    <a href="/home.html">HOME</a>
+                  </li>
+                  <li class="head__menu--item">
+                    <a href="/about.html">ABOUT</a>
+                  </li>
+                  <li class="head__menu--item">
+                    <a href="/contact.html">CONTACT</a>
+                  </li>
+                  <li class="head__menu--item">
+                    <a href="/login.html">LOGIN</a>
+                  </li>
+                  <li class="head__menu--item">
+                    <a href="/register.html">REGISTER</a>
+                  </li>
                 </ul>
               </div>
               <div class="head__search">
@@ -52,9 +66,110 @@
       </div>
     </header>
     <!-- Main -->
-    <main></main>
+    <main>
+      <section class="login">
+        <div class="login__box">
+          <div class="login__box-header">
+            <div class="login__box-header--above">
+              <img
+              src="./assets/images/logo.webp"
+              alt="Travelatw"
+              class="login__box-header-logo"
+              />
+              <p class="login__box-header-content">Travelatw</p>
+            </div>
+              
+            <p class="login__box-header--under">Log in</p>
+          </div>
+          <form method="POST" action="#" class="login__box-form">
+            <div class="login__box-form-group">
+              <input
+                type="email"
+                class="login__form-input"
+                placeholder="Email..."
+                required
+              />
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+
+            <div class="login__box-form-group">
+              <input
+                type="password"
+                class="login__form-input"
+                placeholder="Password..."
+                required
+                minlength="8"
+              />
+              <i class="fa-solid fa-key"></i>
+            </div>
+            <div class="login__box-form-option-forgot">
+              <div class="login__box-form-remember">
+                <input type="checkbox" value="Remember me" class="login__box-form-remember--btn">Remember me</input>
+              </div>
+              <div class="login__box-form-forgot-password">
+                <a href="#">Forgot password?</a>
+              </div>
+            </div>
+            <div class="login__box-form-submit">
+              <input
+              type="submit"
+              value="Log in"
+              class="login__box-form-submit-btn btn"
+            />
+            </div>
+          </form>
+
+          <div class="authentic__box--separation">
+            <div class="authentic__box--separation-left"></div>
+            <div class="authentic__box--separation-content">
+              <p>Or</p>
+            </div>
+            <div class="authentic__box--separation-right"></div>
+          </div>
+
+          <ul class="authentic__box-social">
+            <li
+              class="authentic__box-social-link authentic__box-social-link--fb"
+            >
+              <a href="">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+            </li>
+            <li
+              class="authentic__box-social-link authentic__box-social-link--insta"
+            >
+              <a href="">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li
+              class="authentic__box-social-link authentic__box-social-link--twitter"
+            >
+              <a href="">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+            <li
+              class="authentic__box-social-link authentic__box-social-link--gg"
+            >
+              <a href="">
+                <i class="fa-brands fa-google"></i>
+              </a>
+            </li>
+          </ul>
+
+          <div class="authentic__box--render">
+            <p class="authentic__box-render-message">
+              Need an account?
+            </p>
+            <a class="authentic__box-render-link" href="/register.html">Sign up</a>
+          </div>
+        </div>
+        </div>
+      </section>
+    </main>
     <!-- Footer -->
-    <footer class="register">
+    <!-- <footer>
       <section class="section__footer">
         <div class="container">
           <div class="row">
@@ -156,7 +271,7 @@
           </div>
         </div>
       </section>
-    </footer>
+    </footer> -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script
