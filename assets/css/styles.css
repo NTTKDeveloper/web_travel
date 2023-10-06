@@ -441,15 +441,15 @@
 /* end Page login */
 
 /*  Register */
-body.register {
+/* body.register {
   background-image: linear-gradient(var(--dark-gray-red), rgba(31, 31, 31, 0.3)),
     url(/assets/images/register-bg.png);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
-
+} */
+/* 
 .register__heading {
   color: var(--white);
   text-align: center;
@@ -477,7 +477,7 @@ body.register {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
+} */
 
 /* .register__box-img-heading {
   color: var(--white);
@@ -487,7 +487,7 @@ body.register {
   text-align: center;
   margin-bottom: 24px;
 } */
-
+/* 
 .register__box-img-para {
   color: var(--white);
   text-transform: capitalize;
@@ -531,12 +531,12 @@ body.register {
 .register__form-input:hover {
   color: var(--green2);
   border-color: var(--green2);
-}
+} */
 
 /* .register__form-input::placeholder:focus {
   color: var(--green2);
 } */
-
+/* 
 .register__form-input::placeholder {
   color: rgba(255, 255, 255, 0.8);
   font-weight: 100;
@@ -562,12 +562,12 @@ body.register {
   font-size: 1.2rem;
   font-weight: 600;
   left: 23%;
-}
+} */
 
 /* End Page register */
 
 /* General section of register and login page: separation, social, login/register */
-
+/* 
 .register__box-form--separation,
 .login__box-form--separation {
   display: flex;
@@ -648,19 +648,19 @@ body.register {
 .register__box-social-link--twitter:hover,
 .login__box-social-link--twitter:hover {
   background-color: rgb(28, 156, 234);
-}
+} */
 
-.register__box-social-link--gg:hover,
+/* .register__box-social-link--gg:hover,
 .login__box-social-link--gg:hover {
-  background-color: rgb(243, 0, 28);
-  /* background: linear-gradient(
+  background-color: rgb(243, 0, 28); */
+/* background: linear-gradient(
     rgb(243, 0, 28),
     rgb(255, 197, 0),
     rgb(0, 196, 73),
     rgb(56, 118, 248)
   ); */
-}
-
+/* } */
+/* 
 .register__box-social-link a,
 .login__box-social-link a {
   color: var(--white);
@@ -690,6 +690,243 @@ body.register {
 
 .register__box-login-link:hover,
 .login__box-register-link:hover {
+  font-weight: 600;
+  color: rgb(19, 12, 214);
+} */
+
+.register-banner {
+  background-image: url(/assets/images/register-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+}
+
+.register-banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  font-size: 6rem;
+  font-weight: 900;
+  color: #fff;
+}
+
+.register-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  background-color: #f3f3f3;
+  z-index: 100;
+}
+
+.register__img {
+  flex: 1;
+  text-align: center;
+}
+
+.register__img img {
+  width: 50%;
+}
+
+.register__img-para {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 25px 0 0;
+  padding: 0;
+}
+
+.register__form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 0;
+}
+
+#signup {
+  width: 100%;
+  text-align: center;
+}
+
+.register__form-group {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.register__form-input {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  outline: none;
+  background-color: #fff;
+  height: 40px;
+  width: 70%;
+  font-size: inherit;
+  padding-left: 35px;
+  border-radius: 10px;
+}
+
+.register__form-input:focus {
+  border: 2px solid var(--green2);
+  color: var(--green2);
+}
+
+.register__form-input:focus + i {
+  color: var(--green2);
+}
+
+.register__form-input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.register__form-group i {
+  position: absolute;
+  top: 12px;
+  left: 17%;
+  color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+.register__form-submit {
+  margin: 35px 0 35px;
+}
+
+.register__form-submit-btn {
+  color: var(--white);
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.register__form--separation {
+  display: flex;
+  align-items: center;
+  height: 20px;
+  margin: 0 40px;
+}
+
+.register__form--separation-left,
+.register__form--separation-right {
+  height: 1px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  flex: 1;
+}
+
+.register__form--separation-content {
+  padding: 0px 15px 0px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.register__form--separation-content p {
+  padding: 0;
+  margin: 0;
+}
+
+.register__social {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 35px 0;
+}
+
+.register__social-link {
+  font-size: 1.2rem;
+  /* border: 1px solid var(--black); */
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  margin: 0 5px 0;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.register__social-link:hover {
+  border: transparent;
+  border-radius: 10px;
+}
+
+.register__social-link:hover a {
+  color: var(--white);
+}
+
+.register__social-link--fb a {
+  color: rgb(8, 102, 255);
+}
+
+.register__social-link--fb:hover {
+  background-color: rgb(8, 102, 255);
+}
+
+.register__social-link--insta {
+  font-size: 1.5rem;
+}
+
+.register__social-link--insta a {
+  color: #fd5949;
+}
+
+.register__social-link--insta:hover {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+}
+
+.register__social-link--twitter a {
+  color: rgb(28, 156, 234);
+}
+
+.register__social-link--twitter:hover {
+  background-color: rgb(28, 156, 234);
+}
+
+.register__social-link--gg a {
+  color: rgb(243, 0, 28);
+}
+
+.register__social-link--gg:hover {
+  background-color: rgb(243, 0, 28);
+  /* background: linear-gradient(
+    rgb(243, 0, 28),
+    rgb(255, 197, 0),
+    rgb(0, 196, 73),
+    rgb(56, 118, 248)
+  ); */
+}
+
+.register__social-link a {
+  text-align: center;
+  line-height: 38px;
+}
+
+.register__login {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.register__login-message {
+  padding: 0;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.register__login-link {
+  color: rgb(19, 119, 214);
+}
+
+.register__login-link:hover {
   font-weight: 600;
   color: rgb(19, 12, 214);
 }

@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="./assets/css/base.css" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
-  <body class="register">
+  <body>
     <!-- Header -->
     <header>
       <div class="container">
@@ -67,141 +67,125 @@
     </header>
     <!-- Main -->
     <main>
-      <section class="register">
-        <h1 class="register__heading">Register</h1>
+      <section class="register-banner">
+        <span class="register-banner-text">Register</span>
+      </section>
+      <section class="register-box">
+        <div class="register__img">
+          <img src="./assets/images/register-icon.png" />
+          <!-- <h2 class="register__img-heading">Travelatw</h2> -->
+          <p class="register__img-para">
+            Our destination is not a land, but a new way of looking.
+          </p>
+        </div>
 
-        <div class="register__box">
-          <div class="register__box-img">
-            <!-- <h2 class="register__box-img-heading">Travelatw</h2> -->
-            <p class="register__box-img-para">
-              Our destination is not a land, but a new way of looking.
-            </p>
+        <div class="register__form">
+          <form method="POST" action="#" id="signup">
+            <div class="register__form-group">
+              <input
+                type="text"
+                class="register__form-input"
+                placeholder="Enter your name"
+                required
+              />
+              <i class="fa-solid fa-user"></i>
+            </div>
+
+            <div class="register__form-group">
+              <input
+                type="email"
+                class="register__form-input"
+                placeholder="Enter your email"
+                required
+              />
+
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+
+            <div class="register__form-group">
+              <input
+                type="text"
+                class="register__form-input"
+                placeholder="Enter your address"
+                required
+              />
+
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+
+            <div class="register__form-group">
+              <input
+                type="password"
+                class="register__form-input"
+                placeholder="Enter your password"
+                required
+                minlength="8"
+              />
+
+              <i class="fa-solid fa-unlock"></i>
+              <!-- <div class="register__form-input--show-password">
+                  <i class="fa-solid fa-eye-slash"></i>
+                </div> -->
+            </div>
+
+            <div class="register__form-group">
+              <input
+                type="password"
+                class="register__form-input"
+                placeholder="Confirm your password"
+                required
+                minlength="8"
+              />
+
+              <i class="fa-solid fa-check-double"></i>
+              <!-- <div class="register__form-input--show-password">
+                  <i class="fa-solid fa-eye-slash"></i>
+                </div> -->
+            </div>
+
+            <div class="register__form-submit">
+              <input
+                class="btn register__form-submit-btn"
+                type="submit"
+                value="Register"
+              />
+            </div>
+          </form>
+
+          <div class="register__form--separation">
+            <div class="register__form--separation-left"></div>
+            <div class="register__form--separation-content">
+              <p>Or</p>
+            </div>
+            <div class="register__form--separation-right"></div>
           </div>
 
-          <div class="register__box-form">
-            <form method="POST" action="#" id="signup" class="register__form">
-              <div class="register__form-group">
-                <div class="register__form-input-icon">
-                  <i class="fa-solid fa-user"></i>
-                </div>
-                <input
-                  type="text"
-                  class="register__form-input"
-                  placeholder="Enter your name"
-                  required
-                />
-              </div>
+          <ul class="register__social">
+            <li class="register__social-link register__social-link--fb">
+              <a href="">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="register__social-link register__social-link--insta">
+              <a href="">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li class="register__social-link register__social-link--twitter">
+              <a href="">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+            <li class="register__social-link register__social-link--gg">
+              <a href="">
+                <i class="fa-brands fa-google"></i>
+              </a>
+            </li>
+          </ul>
 
-              <div class="register__form-group">
-                <div class="register__form-input-icon">
-                  <i class="fa-solid fa-envelope"></i>
-                </div>
-                <input
-                  type="email"
-                  class="register__form-input"
-                  placeholder="Enter your email"
-                  required
-                />
-              </div>
-
-              <div class="register__form-group">
-                <div class="register__form-input-icon">
-                  <i class="fa-solid fa-location-dot"></i>
-                </div>
-                <input
-                  type="text"
-                  class="register__form-input"
-                  placeholder="Enter your address"
-                  required
-                />
-              </div>
-
-              <div class="register__form-group">
-                <div class="register__form-input-icon">
-                  <i class="fa-solid fa-unlock"></i>
-                </div>
-                <input
-                  type="password"
-                  class="register__form-input"
-                  placeholder="Enter your password"
-                  required
-                  minlength="8"
-                />
-                <!-- <div class="register__form-input--show-password">
-                  <i class="fa-solid fa-eye-slash"></i>
-                </div> -->
-              </div>
-
-              <div class="register__form-group">
-                <div class="register__form-input-icon">
-                  <i class="fa-solid fa-check-double"></i>
-                </div>
-                <input
-                  type="password"
-                  class="register__form-input"
-                  placeholder="Confirm your password"
-                  required
-                  minlength="8"
-                />
-                <!-- <div class="register__form-input--show-password">
-                  <i class="fa-solid fa-eye-slash"></i>
-                </div> -->
-              </div>
-
-              <div class="register__form-submit">
-                <input
-                  class="btn register__form-submit-btn"
-                  type="submit"
-                  value="Register"
-                />
-              </div>
-            </form>
-
-            <div class="register__box-form--separation">
-              <div class="register__box-form--separation-left"></div>
-              <div class="register__box-form--separation-content">
-                <p>Or</p>
-              </div>
-              <div class="register__box-form--separation-right"></div>
-            </div>
-
-            <ul class="register__box-social">
-              <li
-                class="register__box-social-link register__box-social-link--fb"
-              >
-                <a href="">
-                  <i class="fa-brands fa-facebook-f"></i>
-                </a>
-              </li>
-              <li
-                class="register__box-social-link register__box-social-link--insta"
-              >
-                <a href="">
-                  <i class="fa-brands fa-instagram"></i>
-                </a>
-              </li>
-              <li
-                class="register__box-social-link register__box-social-link--twitter"
-              >
-                <a href="">
-                  <i class="fa-brands fa-twitter"></i>
-                </a>
-              </li>
-              <li
-                class="register__box-social-link register__box-social-link--gg"
-              >
-                <a href="">
-                  <i class="fa-brands fa-google"></i>
-                </a>
-              </li>
-            </ul>
-
-            <div class="register__box-login">
-              <p class="register__box-login-message">
-                Already have an account?
-              </p>
-              <a class="register__box-login-link" href="/login.html">Login</a>
-            </div>
+          <div class="register__login">
+            <p class="register__login-message">Already have an account?</p>
+            <a class="register__login-link" href="/login.html">Login</a>
           </div>
         </div>
       </section>
