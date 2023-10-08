@@ -715,12 +715,11 @@
   color: #fff;
 }
 
-.register-box {
+.register__box {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding-top: 20px;
   background-color: #f3f3f3;
   z-index: 100;
 }
@@ -731,15 +730,49 @@
 }
 
 .register__img img {
-  width: 50%;
+  width: 55%;
+  animation: rotate 10s ease-in-out;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+  form {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(45deg);
+  }
+  to {
+    transform: rotate(90deg);
+  }
+  to {
+    transform: rotate(135deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(225deg);
+  }
+  to {
+    transform: rotate(270deg);
+  }
+  to {
+    transform: rotate(315deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .register__img-para {
   text-align: center;
   font-size: 1.2rem;
   font-weight: 500;
-  margin: 25px 0 0;
+  margin: 30px auto 0;
   padding: 0;
+  width: 85%;
 }
 
 .register__form {
@@ -747,12 +780,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 25px 0;
+  margin-bottom: 10px;
+  width: 100%;
 }
 
 #signup {
   width: 100%;
   text-align: center;
+  margin-top: 35px;
 }
 
 .register__form-group {
@@ -765,7 +800,7 @@
   outline: none;
   background-color: #fff;
   height: 40px;
-  width: 70%;
+  width: 60%;
   font-size: inherit;
   padding-left: 35px;
   border-radius: 10px;
@@ -787,13 +822,13 @@
 .register__form-group i {
   position: absolute;
   top: 12px;
-  left: 17%;
+  left: 22%;
   color: rgba(0, 0, 0, 0.5);
   pointer-events: none;
 }
 
 .register__form-submit {
-  margin: 35px 0 35px;
+  margin: 30px 0;
 }
 
 .register__form-submit-btn {
@@ -801,31 +836,28 @@
   text-transform: uppercase;
   font-size: 1.2rem;
   font-weight: 700;
+  width: 35%;
 }
 
 .register__form--separation {
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 20px;
-  margin: 0 40px;
+  width: 50%;
 }
 
 .register__form--separation-left,
 .register__form--separation-right {
   height: 1px;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.7);
   flex: 1;
 }
 
 .register__form--separation-content {
   padding: 0px 15px 0px;
-  color: rgba(0, 0, 0, 0.8);
-}
-
-.register__form--separation-content p {
-  padding: 0;
-  margin: 0;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .register__social {
@@ -833,12 +865,11 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 35px 0;
+  padding: 25px 0 30px;
 }
 
 .register__social-link {
   font-size: 1.2rem;
-  /* border: 1px solid var(--black); */
   width: 40px;
   height: 40px;
   text-align: center;
@@ -929,6 +960,29 @@
 .register__login-link:hover {
   font-weight: 600;
   color: rgb(19, 12, 214);
+}
+
+@media only screen and (max-width: 900px) {
+  .register__box {
+    flex-direction: column;
+    padding-top: 25px;
+  }
+
+  .register__img img {
+    width: 35%;
+  }
+
+  .register__form {
+    margin-top: 20px;
+  }
+
+  .register__form-input {
+    width: 45%;
+  }
+
+  .register__form-group i {
+    left: 28.5%;
+  }
 }
 
 /* General section of register and login page */
