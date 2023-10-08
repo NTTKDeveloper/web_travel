@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <link rel="stylesheet" href="./assets/css/base.css" />
   </head>
-  <body id="login">
+  <body>
     <!-- Header -->
     <header>
       <div class="container">
@@ -67,8 +67,11 @@
     </header>
     <!-- Main -->
     <main>
-      <section class="login">
-        <div class="login__box">
+      <section class="login__banner">
+        <span class="login__banner-text">Login</span>
+      </section>
+      <section class="login__box">
+        <div class="login__box-form">
           <div class="login__box-header">
             <div class="login__box-header--above">
               <img
@@ -81,25 +84,25 @@
               
             <p class="login__box-header--under">Log in</p>
           </div>
-          <form method="POST" action="#" class="login__box-form">
+          <form method="POST" action="#" class="login__form">
             <div class="login__box-form-group">
               <input
                 type="email"
                 class="login__form-input"
-                placeholder="Email..."
                 required
               />
+              <label for="">Email</label>
               <i class="fa-solid fa-envelope"></i>
             </div>
-
+  
             <div class="login__box-form-group">
               <input
                 type="password"
                 class="login__form-input"
-                placeholder="Password..."
                 required
                 minlength="8"
               />
+              <label for="">Password</label>
               <i class="fa-solid fa-key"></i>
             </div>
             <div class="login__box-form-option-forgot">
@@ -119,52 +122,51 @@
             </div>
           </form>
 
-          <div class="login__box-form--separation">
-            <div class="login__box-form--separation-left"></div>
-            <div class="login__box-form--separation-content">
-              <p>Or</p>
+          <div class="login__form--separation">
+            <div class="login__form--separation-left"></div>
+            <div class="login__form--separation-content">
+              <span>Or</span>
             </div>
-            <div class="login__box-form--separation-right"></div>
+            <div class="login__form--separation-right"></div>
           </div>
-
-          <ul class="login__box-social">
+  
+          <ul class="login__social">
             <li
-              class="login__box-social-link login__box-social-link--fb"
+              class="login__social-link login__social-link--fb"
             >
               <a href="">
                 <i class="fa-brands fa-facebook-f"></i>
               </a>
             </li>
             <li
-              class="login__box-social-link login__box-social-link--insta"
+              class="login__social-link login__social-link--insta"
             >
               <a href="">
                 <i class="fa-brands fa-instagram"></i>
               </a>
             </li>
             <li
-              class="login__box-social-link login__box-social-link--twitter"
+              class="login__social-link login__social-link--twitter"
             >
               <a href="">
                 <i class="fa-brands fa-twitter"></i>
               </a>
             </li>
             <li
-              class="login__box-social-link login__box-social-link--gg"
+              class="login__social-link login__social-link--gg"
             >
               <a href="">
                 <i class="fa-brands fa-google"></i>
               </a>
             </li>
           </ul>
-
-          <div class="login__box-register">
-            <p class="login__box-register-message">
+  
+          <div class="login__register">
+            <span class="login__register-message">
               Need an account?
-            </p>
-            <a class="login__box-register-link" href="/register.html">Sign up</a>
+            </span>
+            <a class="login__register-link" href="/register.html">Sign up</a>
           </div>
-        </div>
         </div>
       </section>
     </main>
