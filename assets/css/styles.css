@@ -2967,32 +2967,3 @@ body#login {
     grid-area: post6;
   }
   /* End Page */
-  font-size: 12px;
-  color: #004d40;
-  text-align: center;
-}
-
-.post1 {
-  grid-area: post1;
-}
-
-.post2 {
-  grid-area: post2;
-}
-
-.post3 {
-  grid-area: post3;
-}
-
-.post4 {
-  grid-area: post4;
-}
-
-.post5 {
-  grid-area: post5;
-}
-
-.post6 {
-  grid-area: post6;
-}
-/* End Page */
