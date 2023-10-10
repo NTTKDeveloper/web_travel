@@ -308,7 +308,7 @@
 /* Page contact */
 .contact {
   height: 100vh;
-  background-image: url("../images/contactimg.jpeg");
+  background-image: url("../images/contact.jpeg");
 }
 
 .contact .contact__content {
@@ -328,8 +328,8 @@
 /* Section contact */
 
 .section__contact .information {
-  border-top: 3px solid var(--green);
-  border-bottom: 3px solid var(--green);
+  border-top: 3px solid var(--green3);
+  border-bottom: 3px solid var(--green3);
   padding: 30px;
   background: var(--white);
   width: 100%;
@@ -339,8 +339,8 @@
 
 .section__contact .form {
   width: 100%;
-  border-top: 3px solid var(--green);
-  border-bottom: 3px solid var(--green);
+  border-top: 3px solid var(--green3);
+  border-bottom: 3px solid var(--green3);
   padding: 30px;
   background: var(--white);
   box-shadow: 0 0 24px 0 var(--dark-gray-red);
