@@ -943,13 +943,14 @@
 
 /* Page Book */
 .book {
+  filter:sepia(40%);	
   height: 100vh;
   background-image: url(/assets/images/book_backround.jpg);
 }
 .book .book__content {
   margin: auto;
   position: absolute;
-  top: 30%;
+  top: 35%;
   left: 50%;
   transform: translateX(-50%);
   position: absolute;
@@ -1006,5 +1007,12 @@
 
 .post6 {
   grid-area: post6;
+}
+.book__description {
+  margin: auto;
+  top: 90%;
+  left: 50%;
+  position: fixed;
+  color: #fff;
 }
 /* End Page */
