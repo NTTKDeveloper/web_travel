@@ -71,6 +71,25 @@
 .home__content--explore .btn__explore a {
   color: var(--white);
 }
+@media (max-width: 567.86px) {
+  .home__content--name {
+    font-size: 70px;
+    font-weight: 700;
+  }
+  .home__content--name span:nth-child(3) {
+    font-size: 40px;
+    font-weight: 600;
+  }
+  .home__content--desc p {
+    font-size: 12px;
+  }
+  .home__content--explore .btn {
+    height: 30px;
+    width: 150px;
+    font-size: 13px;
+    font-weight: 600;
+  }
+}
 
 /* Section one */
 
@@ -285,62 +304,6 @@
 }
 /* End page home */
 
-/* Page about */
-.about {
-  height: 100vh;
-  background-image: url(/assets/images/bg_header.jpg);
-}
-
-.about .about__content {
-  margin: auto;
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translateX(-50%);
-  position: absolute;
-}
-
-.about__content--name {
-  color: var(--white);
-  font-size: 100px;
-  font-weight: 800;
-}
-.section__one--about {
-  padding: 90px;
-  background-color: var(--background-color);
-}
-.section__one--img img {
-  width: 100%;
-  height: auto;
-  padding: 0 30px;
-}
-.section__one--title {
-  color: var(--black);
-  font-size: 32px;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-}
-
-.section__one--desc {
-  font-weight: 600;
-  color: var(--gray);
-  margin-top: 20px;
-  line-height: 2;
-  text-align: justify;
-  padding-bottom: 35px;
-}
-.section__one--btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-}
-
-/* End page about */
-
 /* Page contact */
 .contact {
   height: 100vh;
@@ -395,8 +358,8 @@
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: var(--background-color);
-  color: var(--green);
+  background-color: var(--green3);
+  color: var(--white);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -405,8 +368,7 @@
   top: -10px;
 }
 .section__contact .location-icon i:hover {
-  background-color: var(--green);
-  color: var(--white);
+  background-color: var(--blue);
   transition: 0.4s;
 }
 .section__contact .desc-location {
@@ -425,16 +387,7 @@
 .loading {
   display: none;
 }
-.section__contact .text-center button {
-  background: var(--green);
-  border: 0;
-  padding: 10px 24px;
-  color: var(--white);
-  transition: 0.4s;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-top: 50px;
-}
+
 /* End Page contact */
 
 /*  Register */
@@ -534,6 +487,14 @@
   margin-top: 35px;
 }
 
+.register__form-header {
+  font-size: 2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 25px 0 40px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
 .register__form-group {
   margin-bottom: 15px;
   position: relative;
@@ -566,7 +527,7 @@
 .register__form-group i {
   position: absolute;
   top: 12px;
-  left: 22%;
+  left: 21.5%;
   color: rgba(0, 0, 0, 0.5);
   pointer-events: none;
 }
@@ -596,13 +557,11 @@
   .register__form {
     margin-top: 20px;
   }
+}
 
+@media only screen and (max-width: 500px) {
   .register__form-input {
-    width: 45%;
-  }
-
-  .register__form-group i {
-    left: 28.5%;
+    width: 63%;
   }
 }
 
@@ -742,6 +701,7 @@
 .register__login-link:hover {
   font-weight: 600;
   color: rgb(19, 12, 214);
+  font-size: 1.05rem;
 }
 
 /* General section of register and login page */
@@ -930,6 +890,12 @@
   font-size: 1.05rem;
   font-weight: 600;
   color: rgb(29, 179, 74);
+}
+
+@media only screen and (max-width: 762px) {
+  .login__box-form {
+    width: 530px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
