@@ -125,11 +125,11 @@ header {
   .head__bars {
     height: 28px;
     width: 28px;
-    font-size: 28px;
+    font-size: 35px;
     cursor: pointer;
     color: var(--white);
     display: none;
-    margin-right: 8px;
+    margin-right: 30px;
   }
   .nav__overlay{
     position: fixed;
