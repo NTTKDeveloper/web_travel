@@ -122,23 +122,119 @@ header {
     font-size: 18px;
     cursor: pointer;
   }
-  .head__bars i{
+  .head__bars {
+    height: 28px;
+    width: 28px;
+    font-size: 28px;
+    cursor: pointer;
+    color: var(--white);
+    display: none;
+    margin-right: 8px;
+  }
+  .nav__overlay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.3);
+    display: none;
+    animation: faceIn linear 0.3s;
+  }
+  .head__menu--mobile {
+    position: fixed;
+    top: 0;
+    right: -321px;
+    bottom: 0;
+    width: 320px;
+    max-width: 100%;
+    background-color: var(--white);
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform linear 0.2s;
+  }
+  .head__menu--list-mobile {
+    margin-top: 24px;
+  }
+  .head__menu--item-mobile {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 8px 0;
+    font-size: 1.4rem;
+  }
+  .head__logo--mobile{
+    margin: 30px 10px 10px 12px;
+  }
+  .head__logo--mobile span{
+    font-size: 28px;
+    color: var(--black);
+    font-weight: 700;
+    padding-left: 10px;
+  }
+ .head__menu--mobile--close{
+  font-size: 1.4rem;
+  color: var(--gray);
+  position:absolute;
+  top: 1rem;
+  right: 1rem;
+  top: 30px;
+ }
+ .head__menu--mobile--close:hover{
+  cursor: pointer;
+  color: var(--light-gray);
+ }
+ .hr__mobile{
+  font-size: 10px;
+  margin: 20px 20px 0 20px;
+  border: 2px solid var(--green3);
+  border-radius: 5px;
+ }
+.head__menu--list-mobile{
+  margin-left: 40px;
+}
+.head__menu--list-mobile li{
+  padding: 20px 0;
+}
+.head__menu--list-mobile li a{
+  color: var(--black);
+  margin: 10px;
+  font-weight: 600;
+}
+.head__menu--list-mobile li a:hover{
+  color: var(--gray);
+}
+.input__check:checked ~ .nav__overlay {
+  display:block;
+}
+.input__check:checked ~ .head__menu--mobile{
+  transform: translateX(-100%);
+  opacity: 1;
+}
+
+@keyframes faceIn {
+  form{
+    opacity: 0;
+  } 
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1023px) {
+  .head__bars {
+    display: block;
+    
+  }
+  .head__menu--pc ,.head__search i{
     display: none;
   }
+  .head__bars i:hover{
+    color: var(--light-white);
+  }
+}
 @media (max-width: 991.89px) {
-    .head .head__menu--list, .head__search i{
-      display: none;
-    }
-    .head__bars i{
-      display: block;
-      cursor: pointer;
-      font-size: 28px;
-      cursor: pointer;
-      color: var(--white);
-    }
-    .head__bars i:hover{
-      color: var(--light-white);
-    }
+    
 }
 /*Box */
 .box__head {

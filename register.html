@@ -23,51 +23,63 @@
   </head>
   <body>
     <!-- Header -->
-    <header>
+    <header>        
       <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="head">
-              <div class="head__logo">
-                <a href="#">
-                  <img
-                    src="./assets/images/logo.webp"
-                    alt="LOGO"
-                    class="head__logo--img"
-                  />
-                  <span>TRAVELATW</span>
-                </a>
+          <div class="row">
+              <div class="col-12">
+                  <div class="head">
+                      <div class="head__logo">
+                          <a href="home.html">
+                              <img src="./assets/images/logo.webp" alt="LOGO" class="head__logo--img">
+                              <span>TRAVELATW</span>
+                          </a>
+                      </div>
+                      <nav class="head__menu">
+                          <div class="head__menu--pc">
+                              <ul class="head__menu--list">
+                                  <li class="head__menu--item"><a href="/home.html">HOME</a></li>
+                                  <li class="head__menu--item"><a href="/book.html">BOOK</a></li>
+                                  <li class="head__menu--item"><a href="/contact.html">CONTACT</a></li>
+                                  <li class="head__menu--item"><a href="/login.html">LOGIN</a></li>
+                                  <li class="head__menu--item"><a href="/register.html">REGISTER</a></li>
+                              </ul>
+                          </div>                            
+                      </nav>                        
+                      <div class="head__search">
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                      </div>                        
+                  </div>
               </div>
-              <nav class="head__menu">
-                <ul class="head__menu--list">
-                  <li class="head__menu--item">
-                    <a href="/home.html">HOME</a>
-                  </li>
-                  <li class="head__menu--item">
-                    <a href="/book.html">BOOK</a>
-                  </li>
-                  <li class="head__menu--item">
-                    <a href="/contact.html">CONTACT</a>
-                  </li>
-                  <li class="head__menu--item">
-                    <a href="/login.html">LOGIN</a>
-                  </li>
-                  <li class="head__menu--item">
-                    <a href="/register.html">REGISTER</a>
-                  </li>
-                </ul>
-              </nav>
-              <div class="head__search">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </div>
-              <div class="head__bars">
-                <i class="fa-solid fa-bars"></i>
-              </div>
-            </div>
           </div>
-        </div>
       </div>
-    </header>
+      <label for="nav-mobile-input" class="head__bars">
+          <i class="fa-solid fa-bars"></i>
+      </label>
+      <input type="checkbox" hidden name="" class="input__check" id="nav-mobile-input">
+
+      <label for="nav-mobile-input" class="nav__overlay">            
+      </label>
+
+      <div class="head__menu--mobile">
+          <div class="head__logo--mobile">
+              <a href="home.html">
+                  <img src="./assets/images/logo.webp" alt="LOGO" class="head__logo--img--mobile">
+                  <span>TRAVELATW</span>
+              </a>
+          </div>
+          <label for="nav-mobile-input"  class="head__menu--mobile--close">
+              <i class="fa-solid fa-x"></i>
+          </label>
+          <hr class="hr__mobile">
+          <ul class="head__menu--list-mobile">
+              <li class="head__menu--item-mobile"><a href="/home.html">HOME</a></li>
+              <li class="head__menu--item-mobile"><a href="/book.html">BOOK</a></li>
+              <li class="head__menu--item-mobile"><a href="/contact.html">CONTACT</a></li>
+              <li class="head__menu--item-mobile"><a href="/login.html">LOGIN</a></li>
+              <li class="head__menu--item-mobile"><a href="/register.html">REGISTER</a></li>
+          </ul>
+      </div>
+  </header>
     <!-- Main -->
     <main>
       <section class="register-banner">
