@@ -260,7 +260,7 @@ header {
     display: block;
   }
   .head__menu--pc,
-  .head__search i {
+  .head .head__search {
     display: none;
   }
   .head__bars i:hover {
