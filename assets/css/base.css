@@ -27,6 +27,7 @@
 }
 body {
   font-family: var(--font);
+  display: grid;
 }
 ul {
   margin: 0px;
