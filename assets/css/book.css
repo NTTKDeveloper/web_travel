@@ -10,7 +10,6 @@
   top: 35%;
   left: 50%;
   transform: translateX(-50%);
-  position: absolute;
 }
 
 .book__content--name {
@@ -22,54 +21,133 @@
   padding: 90px;
   background-color: var(--background-color);
 }
+
+.book__description {
+  margin: auto;
+  top: 90%;
+  left: 50%;
+  font-size: 18px;
+  position: relative;
+  color: white;
+}
+
 .section__one--img img {
   width: 100%;
   height: auto;
   padding: 0 30px;
 }
 
-.containergrid {
+.grid-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  position: relative;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-areas:
-    "post1 post2"
-    "post3 post4"
-    "post5 post6";
-  gap: 3rem;
+    "post1 post2 post3"
+    "post4 post5 post6";
+  column-gap: 20px;
+  row-gap: 50px;
   font-weight: 800;
   font-size: 12px;
   color: #004d40;
   text-align: center;
+  padding: 15px;
 }
 
 .post1 {
   grid-area: post1;
+  position: relative;
+  text-align: center;
+  color: white;
 }
 
 .post2 {
+  position: relative;
+  text-align: center;
+  color: white;
   grid-area: post2;
 }
 
 .post3 {
+  position: relative;
+  text-align: center;
+  color: white;
   grid-area: post3;
 }
 
 .post4 {
+  position: relative;
+  text-align: center;
+  color: white;
   grid-area: post4;
 }
 
 .post5 {
+  position: relative;
+  text-align: center;
+  color: white;
   grid-area: post5;
 }
 
 .post6 {
+  position: relative;
+  text-align: center;
+  color: white;
   grid-area: post6;
 }
-.book__description {
-  margin: auto;
-  top: 90%;
+
+
+.title-tour {
+  position: absolute;
+  top: 40%;
   left: 50%;
-  position: fixed;
-  color: #fff;
+  font-size: 30px;
+  transform: translate(-50%, -50%);
+  font-weight: lighter;
+}
+
+.day-tour{
+  position: absolute;
+  color: var(--white);
+  background-color: var(--green);
+  font-size: 18px;
+  border-radius: 30px;
+  align-items: center;
+  justify-content: center;
+  top: 80px;
+  left: 190px;
+  transform: translate(-50%, -50%);
+  font-weight: 500;
+}
+
+.background--tour{
+  border-radius:5% 5% 5% 5%
+}
+
+.btn--booknow{
+  position: relative;
+  bottom: 100px;
+}
+
+.price-tour{
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  font-size: 15px;
+  font-weight:500;
+  transform: translate(-50%, -50%);
+}
+
+.book--rating{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  font-size: 20px;
+  font-weight:500;
+  transform: translate(-50%, -50%);
+}
+
+/* delay-animation */
+.delay {
+  animation-delay: 2s;
 }
 /* End Page */
