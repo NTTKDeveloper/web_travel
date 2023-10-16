@@ -39,10 +39,13 @@
   position: absolute;
 }
 
-.home__content--name {
+.home__content--name span{
   color: var(--white);
   font-size: 100px;
-  font-weight: 800;
+  font-weight: 800;  
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 .home__content--name span:nth-child(3) {
   font-size: 70px;
@@ -72,7 +75,7 @@
   color: var(--white);
 }
 @media (max-width: 567.86px) {
-  .home__content--name {
+  .home__content--name span{
     font-size: 70px;
     font-weight: 700;
   }
@@ -332,7 +335,9 @@
 }
 /* Section contact */
 
-.section__contact .information {
+
+
+.section__contact .section__contact--infor {
   border-top: 3px solid var(--green3);
   border-bottom: 3px solid var(--green3);
   padding: 30px;
@@ -342,7 +347,7 @@
   height: 648px;
 }
 
-.section__contact .form {
+.section__contact .section__contact--form {
   width: 100%;
   border-top: 3px solid var(--green3);
   border-bottom: 3px solid var(--green3);
@@ -350,9 +355,10 @@
   background: var(--white);
   box-shadow: 0 0 24px 0 var(--dark-gray-red);
 }
-.section__contact .infor-location-map iframe {
-  width: 100%;
-  height: 400px;
+
+.infor-location-map iframe {
+ width: 100%;
+ height: 350px;
 }
 .section__contact .infor-location {
   display: flex;
@@ -392,82 +398,11 @@
 .section__contact .sent-message,
 .loading {
   display: none;
+}  
+.form-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
 
-/* End Page contact */
-
-/* Page Book */
-/* .book {
-  filter: sepia(40%);
-  height: 100vh;
-  background-image: url(/assets/images/book_backround.jpg);
-}
-.book .book__content {
-  margin: auto;
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  transform: translateX(-50%);
-  position: absolute;
-}
-
-.book__content--name {
-  color: var(--white);
-  font-size: 100px;
-  font-weight: 800;
-}
-.section__one--book {
-  padding: 90px;
-  background-color: var(--background-color);
-}
-.section__one--img img {
-  width: 100%;
-  height: auto;
-  padding: 0 30px;
-}
-
-.containergrid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-areas:
-    "post1 post2"
-    "post3 post4"
-    "post5 post6";
-  gap: 3rem;
-  font-weight: 800;
-  font-size: 12px;
-  color: #004d40;
-  text-align: center;
-}
-
-.post1 {
-  grid-area: post1;
-}
-
-.post2 {
-  grid-area: post2;
-}
-
-.post3 {
-  grid-area: post3;
-}
-
-.post4 {
-  grid-area: post4;
-}
-
-.post5 {
-  grid-area: post5;
-}
-
-.post6 {
-  grid-area: post6;
-}
-.book__description {
-  margin: auto;
-  top: 90%;
-  left: 50%;
-  position: fixed;
-  color: #fff;
-} */
-/* End Page */
