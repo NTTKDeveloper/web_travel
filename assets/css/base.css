@@ -11,6 +11,7 @@
   --green: #5cb874;
   --green2: #38a62e;
   --green3: #0b3d06;
+  --dark-green: rgb(12, 32, 12);
   --background-green: rgba(68, 150, 91, 0.299);
   --yellow: #ffc107;
   --light-yellow: #ffeb8d;
@@ -57,9 +58,9 @@ a:hover {
   color: var(--yellow);
 }
 hr {
+  border: 1px solid var(--green3);
   margin: 0;
   padding: 0;
-  border: 1px solid var(--green3);
 }
 /* Background img */
 .background--img {
@@ -150,17 +151,6 @@ header {
   border-radius: 20px;
   padding: 6px 16px;
 }
-/* .head__search--active {
-  transform: translateX(15%) !important;
-}
-.head__search-input--active {
-  display: block !important;
-}
-.head__search-btn--active {
-  background: var(--green2) !important;
-  border-radius: 20px;
-  padding: 6px 16px;
-} */
 .head .head__search .head__search--btn i {
   font-size: 18px;
   color: var(--white);
