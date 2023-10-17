@@ -14,6 +14,7 @@
   --dark-green: rgb(12, 32, 12);
   --background-green: rgba(68, 150, 91, 0.299);
   --yellow: #ffc107;
+  --orange: orange;
   --light-yellow: #ffeb8d;
   --blue: #244bc1;
   --background-blue: rgba(7, 58, 109, 0.265);
@@ -40,6 +41,12 @@ a {
 a:hover {
   text-decoration: none;
 }
+hr{
+  margin: 0;
+  padding: 0;
+  border: 1px;
+  background: var(--green3);
+}
 .btn {
   height: 50px;
   width: 250px;
@@ -56,11 +63,6 @@ a:hover {
 }
 .rating i {
   color: var(--yellow);
-}
-hr {
-  border: 1px solid var(--green3);
-  margin: 0;
-  padding: 0;
 }
 /* Background img */
 .background--img {
@@ -398,11 +400,4 @@ footer {
 .section__footer--creator a:hover {
   color: var(--blue);
 }
-.section__footer--content .section__footer--img {
-  width: 100%;
-  height: 100%;
-  bottom: 120px;
-  display: flex;
-  position: absolute;
-  border-radius: 10px;
-}
+
