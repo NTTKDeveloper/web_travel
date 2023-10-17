@@ -317,8 +317,9 @@
 
 /* section four */
 .section__four{
+  
   padding-bottom: 30px;
-  background-color: var(--background-color);
+  background-color: #f3f3f3;
 }
 .section__four--item{
   display: flex;
