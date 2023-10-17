@@ -4,7 +4,7 @@
   height: 100vh;
   background-image: url(/assets/images/book_backround.jpg);
 } */
-/* .book .book__content {
+.book__content {
   margin: auto;
   position: absolute;
   top: 35%;
@@ -17,11 +17,12 @@
   font-size: 100px;
   font-weight: 800;
 }
-.section__one--book {
+
+/* .section__one--book {
   padding: 90px;
   background-color: var(--background-color);
 }
-
+*/
 .book__description {
   margin: auto;
   top: 90%;
@@ -31,7 +32,7 @@
   color: white;
 }
 
-.section__one--img img {
+/* .section__one--img img {
   width: 100%;
   height: auto;
   padding: 0 30px;
