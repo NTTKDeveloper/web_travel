@@ -11,6 +11,9 @@
       referrerpolicy="no-referrer"
     />
     <title>Book</title>
+    <!-- W3.CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -61,7 +64,15 @@
                 </div>
               </nav>
               <div class="head__search">
-                <i class="fa-solid fa-magnifying-glass"></i>
+                <input
+                  type="text"
+                  class="head__search--input"
+                  placeholder="Search..."
+                  autofocus
+                />
+                <button class="head__search--btn" onclick="showSearchInput()">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
               </div>
             </div>
           </div>
@@ -112,21 +123,15 @@
     </header>
 
     <!-- Main -->
-    <main>
+    <main >
       <section class="book background--img">
         <div class="container">
           <div class="row">
             <div class="book__content">
-              <div class="book__content--name">
+              <div class="book__content--name w3-animate-left">
                 <span>BOOK NOW</span>
               </div>
-              <div class="book__description">
-                <span
-                  >“Hãy ngắm nhìn thế giới. Điều đó tuyệt vời hơn bất cứ giấc mơ
-                  nào. “</span
-                ><br />
-                <span>- Ray Bradbury</span>
-              </div>
+              <div class="book__description w3-animate-zoom"> “See the world. It’s more fantastic than any dream.” – Ray Bradbury</div>
             </div>
           </div>
         </div>
@@ -135,233 +140,127 @@
       <!-- Lưới của các bài viết -->
       <section>
         <br />
-        <div class="containergrid">
+        <div class="grid-container">
           <div class="post1">
-            <div class="">
-              <article>
-                <div class="">
-                  <a
-                    href="https://www.ivivu.com/blog/2023/10/cap-nhat-cac-chuong-trinh-khuyen-mai-cua-vietnam-airlines-trong-thang-102023/"
-                    ><img
-                      width="370"
-                      height="215"
-                      src="./assets/images/post_1.jpg"
-                      class="attachment-fp370_215 wp-post-image"
-                      alt="vietnam-airlines-ivivu-7"
-                  /></a>
-                </div>
-                <div class="">
-                  <h2>
-                    <a
-                      href="https://www.ivivu.com/blog/2023/10/cap-nhat-cac-chuong-trinh-khuyen-mai-cua-vietnam-airlines-trong-thang-102023/"
-                      >Cập nhật các chương trình khuyến mãi của Vietnam Airlines
-                      trong tháng 10/2023</a
-                    >
-                  </h2>
-                  <div class="">
-                    <span class=""> 05/10/2023 </span>
-                    <span class=""> <span class="">/</span> 701 views </span>
-                  </div>
-                </div>
-                <div class="">
-                  <p>
-                    Vietnam Airlines mang đến những cơ hội tuyệt vời cho hành
-                    trình khám phá thế giới của quý khách. Với loạt chương trình
-                    khuyến mãi cùng việc triển khai các dịch vụ – tiện ích hấp
-                    dẫn khác cho hành…
-                  </p>
-                  <br />
-                </div>
-              </article>
-              <hr />
+            <img class="background--tour" src="/assets/images/tour1" alt="Tour1" style="width: 100%;"> 
+            <div class="day-tour">
+              Oct 15th - Dec 31th
             </div>
+            <div class="title-tour">VUNG TAU</div>
+
+            <div class="price-tour">From 2.200.000đ</div>
+            <div class="rating list__item_rating book--rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+          </div>
+            <button class="btn btn--booknow">
+              <a href="https://cungphuot.info/kinh-nghiem-du-lich-vung-tau-post27689.cp" target="_blank">BOOK NOW
+                </a>
+          </button>
           </div>
           <div class="post2">
-            <article>
-              <div>
-                <a
-                  href="https://www.ivivu.com/blog/2023/09/vietnam-airlines-trien-khai-chinh-sach-uu-dai-danh-cho-hanh-khach-di-dinh-cu-cac-nuoc/"
-                >
-                  <img
-                    width="370"
-                    height="215"
-                    src="./assets/images/vietnam-airlines-ivivu-72.jpg"
-                    class="attachment-fp370_215 wp-post-image"
-                    alt="Vietnam Airlines Boeing 787-9 Dreamliner"
-                /></a>
-              </div>
-              <h2>
-                <a
-                  href="https://www.ivivu.com/blog/2023/09/vietnam-airlines-trien-khai-chinh-sach-uu-dai-danh-cho-hanh-khach-di-dinh-cu-cac-nuoc/"
-                  >Vietnam Airlines triển khai chính sách ưu đãi dành cho hành
-                  khách đi định cư các nước</a
-                >
-              </h2>
-              <div>
-                <span> 27/09/2023 </span>
-                <span> <span>/</span> 2381 views </span>
-              </div>
-              <div>
-                <p>
-                  Với chính sách ưu đãi đặc biệt từ Vietnam Airlines cho hành
-                  khách đi định cư các nước, quý khách sẽ được hưởng ưu đãi giảm
-                  lên đến 15% giá vé máy bay. Cùng iVIVU khám phá thông tin
-                  chương…
-                </p>
-                <br />
-              </div>
-            </article>
-            <hr />
+            <img class="background--tour" src="/assets/images/tour1" alt="Tour1" style="width: 100%;"> 
+            <div class="day-tour">
+              Oct 15th - Dec 31th
+            </div>
+            <div class="title-tour">VUNG TAU</div>
+
+            <div class="price-tour">From 2.200.000đ</div>
+            <div class="rating list__item_rating book--rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+          </div>
+            <button class="btn btn--booknow">
+              <a href="https://cungphuot.info/kinh-nghiem-du-lich-vung-tau-post27689.cp" target="_blank">BOOK NOW
+                </a>
+          </button>
           </div>
           <div class="post3">
-            <div class="">
-              <article>
-                <div class="">
-                  <a
-                    href="https://www.ivivu.com/blog/2023/09/di-cang-dong-gia-cang-tot-giam-den-15-khi-bay-nhom-cung-vietnam-airlines/"
-                    ><img
-                      width="370"
-                      height="215"
-                      src="./assets/images/vietnam-airlines-ivivu.png"
-                      class="attachment-fp370_215 wp-post-image"
-                      alt="vietnam-airlines-ivivu-7"
-                  /></a>
-                </div>
-                <div class="">
-                  <h2>
-                    <a
-                      href="https://www.ivivu.com/blog/2023/09/di-cang-dong-gia-cang-tot-giam-den-15-khi-bay-nhom-cung-vietnam-airlines/"
-                      >“Đi càng đông – Giá càng tốt”, giảm đến 15% khi bay nhóm
-                      cùng Vietnam Airlines</a
-                    >
-                  </h2>
-                  <div class="">
-                    <span class=""> 05/10/2023 </span>
-                    <span class=""> <span class="">/</span> 701 views </span>
-                  </div>
-                </div>
-                <div class="">
-                  <p>
-                    Đi đâu không quan trọng, quan trọng là được đi cùng nhau!
-                    Hãy đặt nhanh vé máy bay đi du lịch cùng Vietnam Airlines và
-                    iVIVU để có cơ hội nhận ngay ưu đãi giá vé đến 15% cho
-                    những…
-                  </p>
-                  <br />
-                </div>
-              </article>
-              <hr />
+            <img class="background--tour" src="/assets/images/tour1" alt="Tour1" style="width: 100%;"> 
+            <div class="day-tour">
+              Oct 15th - Dec 31th
             </div>
+            <div class="title-tour">VUNG TAU</div>
+
+            <div class="price-tour">From 2.200.000đ</div>
+            <div class="rating list__item_rating book--rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+          </div>
+            <button class="btn btn--booknow">
+              <a href="https://cungphuot.info/kinh-nghiem-du-lich-vung-tau-post27689.cp" target="_blank">BOOK NOW
+                </a>
+          </button>
           </div>
           <div class="post4">
-            <article>
-              <div>
-                <a
-                  href="https://www.ivivu.com/blog/2023/08/bay-khap-viet-nam-cung-bamboo-airways-voi-lich-bay-moi/"
-                >
-                  <img
-                    width="370"
-                    height="215"
-                    src="./assets/images/bamboo-airways-ivivu-10.jpg"
-                    class="attachment-fp370_215 wp-post-image"
-                    alt="Vietnam Airlines Boeing 787-9 Dreamliner"
-                /></a>
-              </div>
-              <h2>
-                <a
-                  href="https://www.ivivu.com/blog/2023/08/bay-khap-viet-nam-cung-bamboo-airways-voi-lich-bay-moi/"
-                  >Bay khắp Việt Nam cùng Bamboo Airways với lịch bay mới</a
-                >
-              </h2>
-              <div>
-                <span> 27/09/2023 </span>
-                <span> <span>/</span> 2381 views </span>
-              </div>
-              <div>
-                <p>
-                  Cùng Bamboo Airways bay khắp Việt Nam với lịch bay nội địa mới
-                  cố định đến hết 28/10/2023. Bamoo Airways sẽ đồng hành cùng
-                  bạn trong những hành trình bay đầy trải nghiệm cùng dịch vụ
-                  chất lượng nhất.
-                </p>
-                <br />
-              </div>
-            </article>
-            <hr />
+            <img class="background--tour" src="/assets/images/tour1" alt="Tour1" style="width: 100%;"> 
+            <div class="day-tour">
+              Oct 15th - Dec 31th
+            </div>
+            <div class="title-tour">VUNG TAU</div>
+
+            <div class="price-tour">From 2.200.000đ</div>
+            <div class="rating list__item_rating book--rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+          </div>
+            <button class="btn btn--booknow">
+              <a href="https://cungphuot.info/kinh-nghiem-du-lich-vung-tau-post27689.cp" target="_blank">BOOK NOW
+                </a>
+          </button>
           </div>
           <div class="post5">
-            <article>
-              <div>
-                <a
-                  href="https://www.ivivu.com/blog/2023/04/khach-san-fusion-original-sai-gon-trai-nghiem-khong-gian-song-day-sang-tao-va-nghe-thuat/"
-                >
-                  <img
-                    width="370"
-                    height="215"
-                    src="./assets/images/Fusion.jpg"
-                    class="attachment-fp370_215 wp-post-image"
-                    alt="Vietnam Airlines Boeing 787-9 Dreamliner"
-                /></a>
-              </div>
-              <h2>
-                <a
-                  href="https://www.ivivu.com/blog/2023/04/khach-san-fusion-original-sai-gon-trai-nghiem-khong-gian-song-day-sang-tao-va-nghe-thuat/"
-                  >Khách sạn Fusion Original Sài Gòn: Trải nghiệm không gian
-                  sống đầy sáng tạo và nghệ thuật</a
-                >
-              </h2>
-              <div>
-                <span> 27/09/2023 </span>
-                <span> <span>/</span> 2381 views </span>
-              </div>
-              <div>
-                <p>
-                  Mang phong cách sống hài hòa giữa văn hóa và nghệ thuật đương
-                  đại, khách sạn Fusion Original Sài Gòn là điểm nghỉ dưỡng sang
-                  trọng, mang nét độc đáo riêng đáng để quý khách trải nghiệm
-                  ngay trung tâm…
-                </p>
-                <br />
-              </div>
-            </article>
+            <img class="background--tour" src="/assets/images/tour1" alt="Tour1" style="width: 100%;"> 
+            <div class="day-tour">
+              Oct 15th - Dec 31th
+            </div>
+            <div class="title-tour">VUNG TAU</div>
+
+            <div class="price-tour">From 2.200.000đ</div>
+            <div class="rating list__item_rating book--rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+          </div>
+            <button class="btn btn--booknow">
+              <a href="https://cungphuot.info/kinh-nghiem-du-lich-vung-tau-post27689.cp" target="_blank">BOOK NOW
+                </a>
+          </button>
           </div>
           <div class="post6">
-            <article>
-              <div>
-                <a
-                  href="https://www.ivivu.com/blog/2023/02/travel-columnist-dung-tran-ra-mat-sach-du-ky-mesmerising-journeys-follow-the-voice-of-your-heart/"
-                >
-                  <img
-                    width="370"
-                    height="215"
-                    src="./assets/images/Travel-Columnist-Dung-Trần-ra-mắt-sách-du-ký-ivivu.jpg"
-                    class="attachment-fp370_215 wp-post-image"
-                    alt="Vietnam Airlines Boeing 787-9 Dreamliner"
-                /></a>
-              </div>
-              <h2>
-                <a
-                  href="https://www.ivivu.com/blog/2023/02/travel-columnist-dung-tran-ra-mat-sach-du-ky-mesmerising-journeys-follow-the-voice-of-your-heart/"
-                  >Travel Columnist Dung Trần ra mắt sách du ký “Mesmerising
-                  Journeys – Follow The Voice Of Your Heart”</a
-                >
-              </h2>
-              <div>
-                <span> 27/09/2023 </span>
-                <span> <span>/</span> 2381 views </span>
-              </div>
-              <div>
-                <p>
-                  Travel Columnist Dung Trần vừa ra mắt sách du ký “Những Hành
-                  Trình Mê Hoặc Bất Tận” vào ngày 20 tháng 2. Bên cạnh tiếng
-                  Việt, Dung Trần còn ra mắt sách tiếng Anh với tên gọi:
-                  “Mesmerising Journeys – Follow…
-                </p>
-                <br />
-              </div>
-            </article>
+            <img class="background--tour" src="/assets/images/tour1" alt="Tour1" style="width: 100%;"> 
+            <div class="day-tour">
+              Oct 15th - Dec 31th
+            </div>
+            <div class="title-tour">VUNG TAU</div>
+
+            <div class="price-tour">From 2.200.000đ</div>
+            <div class="rating list__item_rating book--rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
           </div>
-        </div>
+            <button class="btn btn--booknow">
+              <a href="https://cungphuot.info/kinh-nghiem-du-lich-vung-tau-post27689.cp" target="_blank">BOOK NOW
+                </a>
+          </button>
+          </div>
       </section>
     </main>
     <!-- Footer -->
@@ -481,6 +380,7 @@
       integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
       crossorigin="anonymous"
     ></script>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
 l
