@@ -551,7 +551,7 @@
   transition: all 0.3s ease-in-out;
 }
 .btn--confirm {
-  background: rgb(2, 250, 2);
+  background: rgb(2, 159, 2);
 }
 .btn--confirm:hover {
   color: var(--black);
