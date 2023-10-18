@@ -312,10 +312,11 @@
 
 .register__login,
 .login__register {
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
   margin-bottom: 15px;
+  text-align: center;
 }
 
 .register__login-message,
@@ -378,20 +379,17 @@
 }
 
 .login__box-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  align-self: flex-start;
+  width: 100%;
 }
 
 .login__box-header--above {
-  flex: 1;
-  display: flex;
-  align-items: flex-end;
   margin: 10px 0;
 }
 
 .login__box-header-logo {
   margin-right: 10px;
+  vertical-align: unset;
 }
 
 .login__box-header-content {
@@ -403,12 +401,11 @@
 }
 
 .login__box-header--under {
-  flex: 1;
-  align-self: center;
   font-size: 2rem;
   font-weight: 800;
   text-transform: uppercase;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .login__box-form-group {
@@ -463,7 +460,6 @@
 }
 
 .login__box-form-option-forgot {
-  display: flex;
   margin: 8px 0 35px;
 }
 
@@ -496,16 +492,11 @@
 }
 
 .login__box-form-submit {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 30px;
-}
-
-.login__box-form-submit-btn {
   color: var(--white);
   text-transform: uppercase;
   font-size: 1.2rem;
   font-weight: 700;
+  margin-bottom: 30px;
 }
 
 .login__form--separation {
