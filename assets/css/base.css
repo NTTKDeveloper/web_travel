@@ -18,6 +18,7 @@
   --light-yellow: #ffeb8d;
   --blue: #244bc1;
   --background-blue: rgba(7, 58, 109, 0.265);
+  --background-blue2: rgba(7, 58, 109, 0.543);
   --purple: rgb(54, 10, 54);
   --font: "Open Sans", sans-serif;
 }
@@ -65,6 +66,9 @@ hr{
 .btn a {
   color: var(--white);
 }
+.btn a:hover{
+  color: var(--light-white);
+}
 .rating i {
   color: var(--yellow);
 }
@@ -87,6 +91,11 @@ header {
   justify-content: space-between;
   background-color: var(--background-blue);
 }
+
+.header.header__change {
+  background-color: var(--background-blue2);
+}
+
 .head {
   display: flex;
   justify-content: space-between;
@@ -109,6 +118,7 @@ header {
   list-style: none;
 }
 .head .head__logo {
+  display: flex;
   font-size: 40px;
 }
 .head .head__logo--img {
@@ -289,6 +299,11 @@ header {
   }
 }
 @media (max-width: 991.89px) {
+}
+
+/* Main */
+main{
+  grid-area: main;
 }
 /*Box */
 .box__head {
