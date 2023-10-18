@@ -28,6 +28,9 @@ header {
   .header.header__change .head .head__search i:hover{
     color: #333;
   }
+  .header.header__change .head__cart{
+    
+  }
   .head {
     display: flex;
     align-items: center;
@@ -208,6 +211,15 @@ header {
     opacity: 1;
     transform: translateX(-100%);
   }
+  .head__cart a{
+    color: var(--white);
+    font-size: 24px;
+  }
+  .head__cart a:hover{
+    cursor: pointer;
+    color: var(--light-white);
+
+  }
   
   @keyframes faceIn {
     form {
@@ -221,6 +233,9 @@ header {
   @media (max-width: 1023px) {
     .head__bars {
       display: block;
+    }
+    .header.header__change .head__bars{
+      color: black;
     }
     .head__menu--pc,
     .head .head__search {
